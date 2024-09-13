@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('build project'){
             steps{
-                git url:'https://github.com/BasaveshRS/pro1.git', branch: "master"
+                git url:'https://github.com/BasaveshRS/pro1', branch: "master"
                 sh 'mvn clean package'
               
             }
